@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) {
         GeoService geoService = new GeoServiceImpl();
         LocalizationService localizationService = new LocalizationServiceImpl();
+
         MessageSender messageSender = new MessageSenderImpl(geoService, localizationService);
 
         Map<String, String> headers = new HashMap<String, String>();
